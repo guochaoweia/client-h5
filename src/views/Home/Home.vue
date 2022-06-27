@@ -45,11 +45,11 @@
             </div>
             <div class="footer-btn">
                 <div class="flex-center">
-                    <div class="btn-time flex-center mr-20">
+                    <div class="btn-time flex-content mr-20">
                         <img class="icon" src="../../assets/images/suspend.png" alt="">
                         <div>Time out</div>
                     </div>
-                    <div class="btn-off flex-center">
+                    <div class="btn-off flex-content">
                         <img class="icon" src="../../assets/images/off.png" alt="">
                         <div>End</div>
                     </div>
@@ -60,8 +60,15 @@
 </template>
 
 
-<style>
+<style scoped>
 
+
+.icon-text,.file-text,.foot-text,.icon-litle,.foot-litle{
+    /* 文本超出省略 */
+        text-overflow: ellipsis;
+        /* 写的时候不换行 */
+        white-space: nowrap;
+}
 .home{
     padding: 2rem 2.3rem;
     background: linear-gradient(#dbcbf7,#ebeff7);
@@ -79,7 +86,7 @@
 }
 .header-ipt{
     width: 32rem;
-    height: 6rem;
+    padding: 2rem 0;
     font-size: 2.4rem;
     border-radius: 2rem;
     background: url('../../assets/images/search.png') no-repeat 90% center;
@@ -93,15 +100,13 @@
     height: 12rem;
     background-size: 10rem;
     margin:2rem 0;
-    border: 1px solid ;
     border-radius: 5rem;
     background-color: #eceaff;
-    border: none;
 }
 .main-waaw{
     width: 11rem;
     position: absolute;
-    top: 17rem;
+    top: 18rem;
     left: 4rem;
 }
 .main-text{
@@ -120,13 +125,10 @@
     margin-top: 3.5rem;
     height: 17.4rem;
     overflow-x: scroll;
-    gap: 0 10px;
+    gap: 0 15px;
 }
 .main-img,.main-file{
-    border: 1px solid;
-    width: 13.6rem;
-    height: 17.4rem;
-    border: none;
+    padding: 3rem 1rem;
     border-radius: 2rem;
 }
 .main-img{
@@ -138,7 +140,7 @@
 .main-icon,.file-icon{
     padding: 1.5rem;
     border-radius: 1.5rem;
-    margin: 3rem 4rem 0 4rem;
+    margin-left: 3rem;
 }
 .main-icon{
     background: rgb(210, 213, 254);
@@ -146,9 +148,12 @@
 .file-icon{
     background: #fdeadc;
 }
+.icon-text,.file-text{
+    text-align: center;
+}
 .icon-text,.file-text,.foot-text{
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: bold; 
 }
 .icon-text{
     color: #fff;
@@ -157,44 +162,32 @@
    font-size: 1.5rem;
    color: #a8a3f7;
 }
-.icon-litle,.icon-text,.file-text{
-    text-align: center;
-}
 .footer{
     margin-top: 3.5rem;
-    height: 26rem;
     border-radius: 4rem;
     background: #e5e2ff;
+    padding-bottom: 3.5rem;
 }
 .footer-main{
-    height: 13rem;
     background: #fff;
     border-radius: 3rem;
+    padding: 3.7rem 2rem;
 }
 .icon-book{
     background: #7b71f8;
     padding: 1.5rem;
     border-radius: 5rem ;
 }
-.foot-header{
-    padding: 3.7rem 2rem;
-}
-.footer-btn{
-    margin: 4rem 2rem;
 
+.footer-btn{
+    margin:4rem 2rem 0 2rem;
 }
 .btn-time,.btn-off{
+    width: 14rem;
+    height: 5rem;
     border-radius: 3rem;
     background: #fff;
-    padding: 1.6rem 0;
     font-size: 1.5rem;
     font-weight: bold;
-}
-.btn-time{
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-.btn-off{
-    padding: 1.6rem 4.2rem;
 }
 </style>

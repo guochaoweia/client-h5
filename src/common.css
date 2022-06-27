@@ -13,8 +13,26 @@ body {
     justify-content: space-between;
 }
 
+.flex-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .mt-8 {
     margin-top: 0.8rem;
+}
+
+.mt-10 {
+    margin-top: 1rem;
+}
+
+.mt-12 {
+    margin-top: 1.2rem;
+}
+
+.mt-40 {
+    margin-top: 4rem;
 }
 
 .mr-15 {
@@ -27,6 +45,10 @@ body {
 
 .mr-52 {
     margin-right: 5.2rem;
+}
+
+.ml-5 {
+    margin-left: 0.5rem;
 }
 
 .ml-10 {

@@ -36,14 +36,14 @@
             <div class="foot-header flex-center">
                 <img class="icon icon-book mr-15" src="../../../assets/images/book.png" alt="">
                 <div>
-                    <div class="foot-text">Screen mirroring...</div>
+                    <div class="foot-text blod-text">Screen mirroring...</div>
                     <div class="foot-litle">Mobile screen sharing to TV</div>
                 </div>
             </div>
             <div class="foot-header flex-center">
                 <img class="icon icon-book mr-15" src="../../../assets/images/book.png" alt="">
                 <div>
-                    <div class="foot-text">Screen mirroring...</div>
+                    <div class="foot-text blod-text">Screen mirroring...</div>
                     <div class="foot-litle">Mobile screen sharing to TV</div>
                 </div>
             </div>
@@ -52,15 +52,7 @@
 </div>
 </template>
 
-<style>
-
-
-/* .login{
-    overflow: hidden;
-} */
-::-webkit-scrollbar {
-    width: 0 !important
-}
+<style scoped>
 .login-bgc{
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -68,6 +60,8 @@
     height: 100vh;
     position: fixed;
     z-index: -1;
+    border-radius: 3rem;
+    overflow: hidden;
 }
 .bgc{
     background: #7367fb;
@@ -140,5 +134,20 @@
     background: #fff;
     border-radius: 3rem;
     margin-bottom: 1.9rem;
+}
+.foot-text{
+    font-size: 2rem;
+    /* 文本超出省略 */
+    text-overflow: ellipsis;
+    /* 写的时候不换行 */
+    white-space: nowrap;
+}
+.foot-litle{
+    font-size: 1.5rem;
+    color: #a8a3f7;
+    /* 文本超出省略 */
+    text-overflow: ellipsis;
+    /* 写的时候不换行 */
+    white-space: nowrap;
 }
 </style>
